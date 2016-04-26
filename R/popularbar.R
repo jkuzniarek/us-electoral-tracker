@@ -1,11 +1,11 @@
-#' @title electoralbar
+#' @title popularbar
 #' @param year
-#' @description Generates a bar graph of the winning percentage of electoral votes for the given election year.
-#' @details A bar graph showing the percentage of electoral votes won for the given election year is generated.
+#' @description Generates a bar graph of the winning percentage of popular votes for the given election year.
+#' @details A bar graph showing the percentage of popular votes won for the given election year is generated.
 #' @example 
-#' R/electoralbar.R
+#' R/popularbar.R
 
-electoralbar <- function(year){
+popularbar <- function(year){
   require(grDevices)
   votes <- read.csv("VotesData.csv", stringsAsFactors = FALSE)
   done <- FALSE
@@ -28,12 +28,12 @@ electoralbar <- function(year){
     print("Election data was not found for that year.")
   } else {
     president <- c(votes[line, 1])
-    percent <- votes[line, 4]
+    percent <- votes[line, 3]
     heights <- c(100, percent, (100 - percent))
     
     barplot(heights, names.arg = c("Total", president, "Other"),
             horiz = FALSE, col = c("white", "blue", "red"), 
-            border = "black", main = ("Electoral Vote Distribution"), 
+            border = "black", main = ("Popular Vote Distribution"), 
             sub = (year), ylab = "Percent of Votes", 
             axes = TRUE, axisnames = TRUE, cex.names = 0.70)
   }

@@ -12,4 +12,4 @@ Data from:
 	* View bar graph of winning percentage of popular votes per election  
 	* View bar graph of presidents and their percentage of electoral votes ordered by year  
 	* View bar graph of presidents and their percentage of popular votes ordered by year  
-	* View line graph of the ratio of popular votes to electoral votes by year  
+	* View line graph of the total difference between popular votes and electoral votes by year  
