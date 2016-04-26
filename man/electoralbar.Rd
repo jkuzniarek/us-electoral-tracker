@@ -6,6 +6,9 @@
 \usage{
 electoralbar(year)
 }
+\arguments{
+\item{year}{An integer}
+}
 \description{
 Generates a bar graph of the winning percentage of electoral votes for the given election year.
 }
@@ -14,7 +17,7 @@ A bar graph showing the percentage of electoral votes won for the given election
 }
 \examples{
 #' @title electoralbar
-#' @param year
+#' @param year An integer
 #' @description Generates a bar graph of the winning percentage of electoral votes for the given election year.
 #' @details A bar graph showing the percentage of electoral votes won for the given election year is generated.
 #' @example 
@@ -43,15 +46,14 @@ electoralbar <- function(year){
     print("Election data was not found for that year.")
   } else {
     president <- c(votes[line, 1])
-    print(president)
     percent <- votes[line, 4]
     heights <- c(100, percent, (100 - percent))
     
-    barplot(heights, names.arg = c("Total", president, "Others"),
+    barplot(heights, names.arg = c("Total", president, "Other"),
             horiz = FALSE, col = c("white", "blue", "red"), 
             border = "black", main = ("Electoral Vote Distribution"), 
             sub = (year), ylab = "Percent of Votes", 
-            axes = TRUE, axisnames = TRUE)
+            axes = TRUE, axisnames = TRUE, cex.names = 0.70)
   }
 }
 }

@@ -1,10 +1,10 @@
 Package: anRpackage
 Type: Package
-Title: What the package does (short line)
+Title: US-Electoral-Tracker
 Version: 1.0
 Date: 2016-04-22
-Author: Who wrote it
-Maintainer: Who to complain to <yourfault@somewhere.net>
-Description: More about what it does (maybe more than one line)
-License: What license is it under?
+Author: Julien Kuzniarek
+Maintainer: Julien Kuzniarek <julienkuzniarek@gmail.com>
+Description: R package that tracks the votes in US Presidential elections from 1828-2012
+License: CC0
 RoxygenNote: 5.0.1
