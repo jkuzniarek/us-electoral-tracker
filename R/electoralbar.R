@@ -1,8 +1,7 @@
-#' @title electoralbar
+#' @title Generates a bar graph of the winning percentage of electoral votes for the given election year.
 #' @param year An integer
-#' @description Generates a bar graph of the winning percentage of electoral votes for the given election year.
-#' @details A bar graph showing the percentage of electoral votes won for the given election year is generated.
-#' @example 
+#' @aliases electoralbar
+#' @examples 
 #' R/electoralbar.R
 
 electoralbar <- function(year){

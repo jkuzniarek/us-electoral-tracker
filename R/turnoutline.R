@@ -1,6 +1,5 @@
-#' @title turnoutline
-#' @description Generates a line graph of the voter turnout data.
-#' @details A line graph showing voter turnout from 1828-2012 is generated.
+#' @title Generates a line graph of the voter turnout data.
+#' @aliases turnoutline
 #' @example 
 #' R/turnoutline.R
 turnoutline <- function(){
@@ -9,4 +8,3 @@ turnoutline <- function(){
   plot(turnout, type = "l", main = "Voter Turnout from 1828-2012", 
        ylab = "Turnout (% of voting age population)", col = "blue")
 }
-

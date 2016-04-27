@@ -1,10 +1,10 @@
-Package: anRpackage
+Package: uset
 Type: Package
-Title: US-Electoral-Tracker
+Title: US Electoral Tracker
 Version: 1.0
 Date: 2016-04-22
 Author: Julien Kuzniarek
 Maintainer: Julien Kuzniarek <julienkuzniarek@gmail.com>
-Description: R package that tracks the votes in US Presidential elections from 1828-2012
+Description: R package that tracks the votes in US Presidential elections from 1828-2012.
 License: CC0
 RoxygenNote: 5.0.1

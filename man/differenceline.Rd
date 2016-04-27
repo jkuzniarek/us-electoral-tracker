@@ -2,20 +2,13 @@
 % Please edit documentation in R/differenceline.R
 \name{differenceline}
 \alias{differenceline}
-\title{differenceline}
+\title{Generates a line graph of the difference between popular and electoral votes ordered by year.}
 \usage{
 differenceline()
 }
-\description{
-Generates a line graph of the difference between popular and electoral votes ordered by year.
-}
-\details{
-A line graph showing the difference in percentage of popular and elctoral votes won by each president for each election year from 1828-2012 is generated.
-}
 \examples{
-#' @title differenceline
-#' @description Generates a line graph of the difference between popular and electoral votes ordered by year.
-#' @details A line graph showing the difference in percentage of popular and elctoral votes won by each president for each election year from 1828-2012 is generated.
+#' @title Generates a line graph of the difference between popular and electoral votes ordered by year.
+#' @aliases differenceline
 #' @example 
 #' R/differenceline.R
 

@@ -1,8 +1,7 @@
-#' @title popularbar
+#' @title Generates a bar graph of the winning percentage of popular votes for the given election year.
 #' @param year An integer
-#' @description Generates a bar graph of the winning percentage of popular votes for the given election year.
-#' @details A bar graph showing the percentage of popular votes won for the given election year is generated.
-#' @example 
+#' @aliases popularbar
+#' @examples 
 #' R/popularbar.R
 
 popularbar <- function(year){
